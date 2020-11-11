@@ -8,49 +8,46 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="Linux实验（二）这是一次验证型实验,了解Linux下的网络功能，验证一个网络服务的配置，理解Linux强大的网络功能。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/11/10/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CWeb%E6%96%B0%E6%89%8B%E5%8C%BA%E9%A2%98%E8%A7%A3%20(1)/index.html">
+<meta property="og:url" content="http://example.com/2020/11/11/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%BA%8C%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Linux实验（二）这是一次验证型实验,了解Linux下的网络功能，验证一个网络服务的配置，理解Linux强大的网络功能。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030213731987.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030213802870.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030214114846.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030214157584.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215031514.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020103021520356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215214437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020103021523658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215420516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215526425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215645903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201030215654589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161130194.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161151185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161217601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161246963.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161306460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161326986.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161555701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161627530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161643360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161714791.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031161851650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162037339.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162143125.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162202234.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162241429.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162352550.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162656241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162707528.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162809674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162827985.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201031162842717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="article:published_time" content="2020-11-10T09:03:46.752Z">
-<meta property="article:modified_time" content="2020-11-10T09:04:11.316Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111145057237.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111145904484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111145951738.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111115000162.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111115023885.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111150333561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111150415192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111150440665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111150613495.jpg#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111150635109.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111151123413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152050384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152111559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152158733.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152552501.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152608582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152628293.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152642247.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152655200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152716909.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152731464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152745901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152758727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152813551.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111115283151.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152843697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201111152857482.png#pic_center">
+<meta property="article:published_time" content="2020-11-11T07:37:03.390Z">
+<meta property="article:modified_time" content="2020-11-11T07:37:26.718Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201030213731987.png#pic_center">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -178,64 +175,40 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-攻防世界Web新手区题解 (1)" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Linux实验（二）" class="article article-type-post " itemscope itemprop="blogPost">
 
 <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <hr style=" border:solid; width:100px; height:1px;" color=#000000 size=1">
-
-<h1 id="攻防世界Web新手区题解"><a href="#攻防世界Web新手区题解" class="headerlink" title="攻防世界Web新手区题解"></a>攻防世界Web新手区题解</h1><p><font color=#999AAA >本周开始做攻防世界web新手区的内容。</font></p>
+        <h1 id="Linux实验（二）"><a href="#Linux实验（二）" class="headerlink" title="Linux实验（二）"></a>Linux实验（二）</h1><p><font color=#999AAA >这是一次验证型实验,了解Linux下的网络功能，验证一个网络服务的配置，理解Linux强大的网络功能。</font></p>
 <a id="more"></a>
-
-<h2 id="一、View-source"><a href="#一、View-source" class="headerlink" title="一、View_source"></a>一、View_source</h2><p>题目描述：X老师让小宁同学查看一个网页的源代码，但小宁同学发现鼠标右键好像不管用了。</p>
-<p><img src="https://img-blog.csdnimg.cn/20201030213731987.png#pic_center" alt="在这里插入图片描述"><br>F12：<br><img src="https://img-blog.csdnimg.cn/20201030213802870.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>即可获得flag。当然也可以在地址栏前面加上view-source</p>
-<h2 id="二、Robots"><a href="#二、Robots" class="headerlink" title="二、Robots"></a>二、Robots</h2><p>题目描述：X老师上课讲了Robots协议，小宁同学却上课打了瞌睡，赶紧来教教小宁Robots协议是什么吧。</p>
-<p>robots 是网站跟爬虫间的协议，用简单直接的 txt 格式文本方式告诉对应的爬 虫被允许的权限，也就是说 robots.txt 是搜索引擎中访问网站的时候要查看的 第一个文件。当一个搜索蜘蛛访问一个站点时，它会首先检查该站点根目录下是 否存在 robots.txt，如果存在，搜索机器人就会按照该文件中的内容来确定访 问的范围；如果该文件不存在，所有的搜索蜘蛛将能够访问网站上所有没有被口 令保护的页面。</p>
-<p>先看一下robots.txt文件，看看有什么东西：</p>
-<p><img src="https://img-blog.csdnimg.cn/20201030214114846.png#pic_center" alt="在这里插入图片描述"></p>
-<p>提示我们打开flag_ls_h3re.php文件：</p>
-<p><img src="https://img-blog.csdnimg.cn/20201030214157584.png#pic_center" alt="在这里插入图片描述"></p>
-<p>获得flag</p>
-<h2 id="三、Get-post"><a href="#三、Get-post" class="headerlink" title="三、Get_post"></a>三、Get_post</h2><p>题目描述：X老师告诉小宁同学HTTP通常使用两种请求方法，你知道是哪两种吗？</p>
-<p>在 url 中输入?a=1 get 方式传递一个 a 值 再用火狐的 Hackbar 以 post 的方式传递 b 的值：</p>
-<p><img src="https://img-blog.csdnimg.cn/20201030215031514.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="四、Cookie"><a href="#四、Cookie" class="headerlink" title="四、Cookie"></a>四、Cookie</h2><p>题目描述：X老师告诉小宁他在cookie里放了些东西，小宁疑惑地想：‘这是夹心饼干的意思吗？’</p>
-<p>用火狐浏览器查看 cookie,得到提示，查看 http 响应头，得到 flag</p>
-<p><img src="https://img-blog.csdnimg.cn/2020103021520356.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20201030215214437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020103021523658.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="五、Backup"><a href="#五、Backup" class="headerlink" title="五、Backup"></a>五、Backup</h2><p>题目描述：X老师忘记删除备份文件，他派小宁同学去把备份文件找出来,一起来帮小宁同学吧！</p>
-<p><img src="https://img-blog.csdnimg.cn/20201030215420516.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>index.php的备份文件文件名：index.php.bak</p>
-<p>访问index.php.bak得到一个文件夹，用记事本打开：<br><img src="https://img-blog.csdnimg.cn/20201030215526425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="六、Disabled-button"><a href="#六、Disabled-button" class="headerlink" title="六、Disabled_button"></a>六、Disabled_button</h2><p>题目描述：X老师今天上课讲了前端知识，然后给了大家一个不能按的按钮，小宁惊奇地发现这个按钮按不下去，到底怎么才能按下去呢？</p>
-<p>查看元素发现 button 的默认值是 disabled,删了就能按了<br><img src="https://img-blog.csdnimg.cn/20201030215645903.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201030215654589.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="七、simple-php"><a href="#七、simple-php" class="headerlink" title="七、simple_php"></a>七、simple_php</h2><p>题目描述：小宁听说php是最好的语言,于是她简单学习之后写了几行php代码。</p>
-<p>打开页面发现是以get的方式传入参数a和b，并且要求a=0&amp;&amp;a为真，b不能为数字且b&gt;1234 通过构造命令 a=a&amp;&amp;b=12345a：</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161130194.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="八、weak-auth"><a href="#八、weak-auth" class="headerlink" title="八、weak_auth"></a>八、weak_auth</h2><p>题目描述：小宁写了一个登陆验证页面，随手就设了一个密码。</p>
-<p>随便输入用户名和密码，提示要用 admin 用户登入，然后就跳转到了 check.php，查看源码， 提示要用字典，<br><img src="https://img-blog.csdnimg.cn/20201031161151185.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>用 admin 和 123 登陆，再用 burp 截下数据包并发送到 intruder 爆破<br><img src="https://img-blog.csdnimg.cn/20201031161217601.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>加载字典后，</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161246963.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>明显看到当密码为 123456 时的响应包长度不一致，点进去得到 flag</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161306460.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201031161326986.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="九、xff-referer"><a href="#九、xff-referer" class="headerlink" title="九、xff_referer"></a>九、xff_referer</h2><p>题目描述：X老师告诉小宁其实xff和referer是可以伪造的。</p>
-<p>打开页面要求 ip 为 123.123.123.123，可以使用 X-Forwarder-For 来伪造 ip</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161555701.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>进入 Repeater 选项卡，添加 xff 头</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161627530.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>看到要必须来自 google.com，利用 referer 添加</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031161643360.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201031161714791.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="十、webshell"><a href="#十、webshell" class="headerlink" title="十、webshell"></a>十、webshell</h2><p>题目描述：小宁百度了php一句话,觉着很有意思,并且把它放在index.php里。<br><img src="https://img-blog.csdnimg.cn/20201031161851650.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>打开页面有一句话，可以看出密码是 shell，可以用菜刀和蚁剑，这里用 hackbar </p>
-<p><font color=#999AAA >一句话木马就是通过向服务端提交一句简短的代码来达到向服务器插入木马并 最终获得 webshell 的方法。<br> php 一句话木马： <?php @eval($_POST[value]); ?><br> asp 一句话木马： &lt;%eval request (“value”)%&gt; 或 &lt;% execute(request(“value”)) %&gt;<br> aspx 一句话木马： &lt;%@ Page Language=”Jscript” %&gt; &lt;% eval(Request.Item[“value”]) %&gt;<br> 使用 post 传递 shell=system(‘cat flag.txt’);</p>
-<p> <img src="https://img-blog.csdnimg.cn/20201031162037339.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="十一、simple-js"><a href="#十一、simple-js" class="headerlink" title="十一、simple_js"></a>十一、simple_js</h2><p>题目描述：小宁发现了一个网页，但却一直输不对密码。(Flag格式为 Cyberpeace{xxxxxxxxx} )<br><img src="https://img-blog.csdnimg.cn/20201031162143125.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>打开页面让我们输入密码，随便输一个后，查看源代码：</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031162202234.png#pic_center" alt="在这里插入图片描述"><br>看到一串字符用 python 输出：假的密码 hh</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031162241429.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201031162352550.png#pic_center" alt="在这里插入图片描述"><br>又发现一串 16 进制字符，用 python 转换为 10 进制在转化成对应的 ascii 码：<br><img src="https://img-blog.csdnimg.cn/20201031162656241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201031162707528.png#pic_center" alt="在这里插入图片描述"></p>
-<h2 id="十二、command-execution"><a href="#十二、command-execution" class="headerlink" title="十二、command_execution"></a>十二、command_execution</h2><p>题目描述：小宁写了个ping功能,但没有写waf,X老师告诉她这是非常危险的，你知道为什么吗。</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031162809674.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>ping 一下 127.0.0.1 可以执行再尝试拼接执行，ping 127.0.0.1&amp;&amp;ls 也可以执行，</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031162827985.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>尝试找到所有的 txt 文件，发现 flag.txt，打开</p>
-<p><img src="https://img-blog.csdnimg.cn/20201031162842717.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h1><p>了解Linux下的网络功能，验证一个网络服务的配置，理解Linux强大的网络功能。</p>
+<h1 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h1><p>本次实验将以“Linux实验系统”linuxer服务器端的设置为任务，实验环境既是客户端，又是服务器端，只需要通过实验环境IP地址访问服务器端的服务即可，注意IP地址127.0.0.1，名称localhost是实验环境的网络地址（环回地址），用于在服务器上访问自己。</p>
+<h2 id="1）熟悉实验环境的网络状态"><a href="#1）熟悉实验环境的网络状态" class="headerlink" title="1）熟悉实验环境的网络状态"></a>1）熟悉实验环境的网络状态</h2><p><strong>(a) 请写出命令查看网络IP地址，并解释命令的输出结果。</strong><br>ifconfig<br><img src="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>网卡的ip：10.42.90.243</p>
+<p>子网掩码：255.255.0.0 </p>
+<p>广播地址：10.42.255.255</p>
+<p>输出第三行：网卡的ipv6地址</p>
+<p>输出第四行：连接类型是以太网硬件mac地址；txqueuelen为网卡设置的传送队列长度</p>
+<p>输出第五行：Rx Packets就是接收数据包的意思</p>
+<p>Tx Packets就是发送数据包</p>
+<p><strong>(b) 请写出命令查看网络路由，并解释命令的输出结果。</strong><br>route<br><img src="https://img-blog.csdnimg.cn/20201111145057237.png#pic_center" alt="在这里插入图片描述"><br>默认网关：10.42.0.1</p>
+<p>子网掩码：255.255.0.0</p>
+<p>标志：U表示路由是活动的，H表示目标是个主机，G表示需要经过网关，R表示恢复动态路由产生的表项，D表示由路由的后台程序动态地安装，M表示由路由地后台程序修改，！表示拒绝路由</p>
+<p>跃点：即路由。一个跃点就是一个路由。传输过程中需要经过多个网络,每个被经过的网络设备点(有能力路由的)叫做一个跃点,地址就是它的ip。</p>
+<h2 id="2）配置linuxer服务端“上传实验报告”的功能"><a href="#2）配置linuxer服务端“上传实验报告”的功能" class="headerlink" title="2）配置linuxer服务端“上传实验报告”的功能"></a>2）配置linuxer服务端“上传实验报告”的功能</h2><p><strong>(a) 确认linuxer客户端安装成功（特别是依赖包安装成功）</strong><br>首先设置全局覆盖，保证后续实验能够访问网络<br><img src="https://img-blog.csdnimg.cn/20201111145904484.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述">安装linuxer client.deb<br><img src="https://img-blog.csdnimg.cn/20201111145951738.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020111115000162.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>dpkg -i linuxer-client.deb<br><img src="https://img-blog.csdnimg.cn/2020111115023885.png#pic_center" alt="在这里插入图片描述"><br>安装linuxer客户端时发现没有安装依赖包wput：<br><img src="https://img-blog.csdnimg.cn/20201111150333561.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>用命令apt install  wput安装：<br><img src="https://img-blog.csdnimg.cn/20201111150415192.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>再次安装linuxer客户端软件：<br><img src="https://img-blog.csdnimg.cn/20201111150440665.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>安装成功。</p>
+<p>检验是否成功安装：</p>
+<p>whereis linuxer<br><img src="https://img-blog.csdnimg.cn/20201111150613495.jpg#pic_center" alt="在这里插入图片描述"><br>dpkg -l linuxer-client显示已安装包信息<br><img src="https://img-blog.csdnimg.cn/20201111150635109.png#pic_center" alt="在这里插入图片描述"><br>安装成功。</p>
+<p><strong>(b) 在linuxer服务器端安装ftp服务，在linuxer客户端安装ftp客户软件</strong><br>安装ftp服务端：<br><img src="https://img-blog.csdnimg.cn/20201111151123413.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>安装ftp客户端：<br><img src="https://img-blog.csdnimg.cn/20201111152050384.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>启动服务：<br><img src="https://img-blog.csdnimg.cn/20201111152111559.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>其中ftpd用于ftp协议响应，tcpd接受用户连接<br><img src="https://img-blog.csdnimg.cn/20201111152158733.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>(c) 设置ftp服务的欢迎信息为“Welcome to linuxer server v4.0!”，使用ftp客户软件验证</strong><br>配置FTP服务端的连接提示信息和登陆提示信息:<br><img src="https://img-blog.csdnimg.cn/20201111152552501.png#pic_center" alt="在这里插入图片描述"><br>ftp客户端进行验证：<br><img src="https://img-blog.csdnimg.cn/20201111152608582.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>(d) 使用adduser命令创建帐号（学号），配置ftp服务允许该帐号上传文件到该用户主目录，使用ftp客户软件验证</strong><br>ftp服务允许该帐号上传文件到该用户主目录，使用ftp客户软件验证</p>
+<p>添加用户5120183773并设置密码：<br><img src="https://img-blog.csdnimg.cn/20201111152628293.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>重新启动服务：<br><img src="https://img-blog.csdnimg.cn/20201111152642247.png#pic_center" alt="在这里插入图片描述"><br>用ftp客户端验证：<br><img src="https://img-blog.csdnimg.cn/20201111152655200.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>对用户5120183773进行访问目录控制，仅能访问自己的主目录。<br><img src="https://img-blog.csdnimg.cn/20201111152716909.png#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>(e) 启动linuxer客户端软件，使用“报告上传”功能验证linuxer服务器端的ftp服务配置成功</strong><br>启动客户端：<br><img src="https://img-blog.csdnimg.cn/20201111152731464.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>选择‘2’，上传报告成功，验证ftp服务配置成功：<br><img src="https://img-blog.csdnimg.cn/20201111152745901.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center"><br><img src="https://img-blog.csdnimg.cn/20201111152758727.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p><strong>(f) 配置TCPWrapper，使FTP服务仅允许本机（localhost）访问**</strong><br>两条命令：<br><img src="https://img-blog.csdnimg.cn/20201111152813551.png#pic_center" alt="在这里插入图片描述"><br>首先allow本机：<br><img src="https://img-blog.csdnimg.cn/2020111115283151.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>拒绝除本机外的访问：<br><img src="https://img-blog.csdnimg.cn/20201111152843697.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>验证仅能本机访问：<br><img src="https://img-blog.csdnimg.cn/20201111152857482.png#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="三、实验思考"><a href="#三、实验思考" class="headerlink" title="三、实验思考"></a>三、实验思考</h1><p>1、当hosts.all和hosts.deny中的配置有矛盾（例如对同一个网络服务，一个配置允许访问，一个配置拒绝访问）的时候，网络访问控制如何进行？</p>
+<p>   当hosts.all和hosts.deny中的配置有矛盾时，以host.deny为准。例如对同一个网络服务，一个配置允许访问，一个配置拒绝访问，网络访问控制拒绝访问。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>   这是第二次实验，相比第一次实验，对命令的熟悉度提高了，对网络ip地址和网络路由也有了更深刻的理解，知道了每个语句的确切含义，同时有了第一次实验的经验，在安装linuxer客户端软件的时候也更熟悉。</p>
+<p>   实验过程中也遇到了一些问题，一是在老师讲解前不知道怎么启动客户端，二是配置TCPWrapper时只deny了all没有先允许本机访问。这些问题在老师讲解后都得到了解决。</p>
 
       
 
@@ -325,7 +298,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/10/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CWeb%E6%96%B0%E6%89%8B%E5%8C%BA%E9%A2%98%E8%A7%A3%20(1)/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/11/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%BA%8C%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -339,17 +312,8 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/11/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2020/11/10/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%B8%80%EF%BC%89(5%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2020/11/10/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8CWeb%E6%96%B0%E6%89%8B%E5%8C%BA%E9%A2%98%E8%A7%A3%20(1)/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title"></div>
       <i class="icon-circle-right"></i>
     </a>
