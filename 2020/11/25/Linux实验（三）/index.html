@@ -8,45 +8,56 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux实验（一）这是一次验证型实验">
+  <meta name="description" content="Linux实验（三）这是一次验证型实验,本次实验以Linux环境下的信息系统安全实现为目标，具体包括安全系统的设计、安全功能的实现、灾难恢复、安全审计等。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2020/11/10/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%B8%80%EF%BC%89(5%EF%BC%89/index.html">
+<meta property="og:url" content="http://example.com/2020/11/25/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%B8%89%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Linux实验（一）这是一次验证型实验">
+<meta property="og:description" content="Linux实验（三）这是一次验证型实验,本次实验以Linux环境下的信息系统安全实现为目标，具体包括安全系统的设计、安全功能的实现、灾难恢复、安全审计等。">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110153004150.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110153313286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110153403277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110153535914.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110155817370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110160038835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111016024484.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110160458230.jpg#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110160559798.jpg#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111016071334.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110160804179.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110160904366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110161011847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163003763.png#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111016302671.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163041444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163108574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111016313064.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163210646.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163242529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163254775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163323383.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163456168.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163518431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163540812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163603673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20201110163633379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
-<meta property="article:published_time" content="2020-11-10T08:53:21.097Z">
-<meta property="article:modified_time" content="2020-11-10T08:53:41.045Z">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125160919777.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125160928695.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125160935893.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125160943818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161033824.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161041913.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161127717.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161223186.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161235201.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161555305.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161615693.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020112516162587.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161633652.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161725389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161756373.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161806191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020112516181380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161821336.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161828312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161833610.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161841595.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161851861.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161857358.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020112516193318.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161939662.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125161945863.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162121425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162136869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162145930.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162154661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162203338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162221272.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162231847.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162238768.png#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162247432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125162257874.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20201125160410471.png#pic_center">
+<meta property="article:published_time" content="2020-11-25T08:25:00.750Z">
+<meta property="article:modified_time" content="2020-11-25T08:25:17.057Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://img-blog.csdnimg.cn/20201110153004150.png#pic_center">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -174,58 +185,115 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-Linux实验（一）(5）" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Linux实验（三）" class="article article-type-post " itemscope itemprop="blogPost">
 
 <div class="article-inner">
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Linux实验（一）"><a href="#Linux实验（一）" class="headerlink" title="Linux实验（一）"></a>Linux实验（一）</h1><p><font color=#999AAA >这是一次验证型实验</font></p>
+        <h1 id="Linux实验（三）"><a href="#Linux实验（三）" class="headerlink" title="Linux实验（三）"></a>Linux实验（三）</h1><p><font color=#999AAA >这是一次验证型实验,本次实验以Linux环境下的信息系统安全实现为目标，具体包括安全系统的设计、安全功能的实现、灾难恢复、安全审计等。</font></p>
 <a id="more"></a>
-<h1 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h1><p>了解Linux字符界面的操作特点，验证Linux命令的用途，掌握Linux的基本操作、管理、帮助、编辑命令。</p>
-<p>了解Linux上软件安装的不同方式，验证在Linux上安装和卸载二进制包和源代码包的过程，掌握Linux上安装和卸载软件的方法。</p>
-<h1 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h1><p>1、打开命令行窗口，完成如下任务：</p>
-<p>在“/root”目录下建立目录“学号”（比如：“/root/20060610”）；</p>
-<p>在上述目录中，以“学号.txt”为文件名生成一个文本文件（比如20060610.txt），并录入图1-1中的文字内容（比如：“/root/20060610/20060610.txt”）。<br><img src="https://img-blog.csdnimg.cn/20201110153004150.png#pic_center" alt="在这里插入图片描述"><br>执行cat命令，显示以上文本文件的内容。</p>
+<h1 id="一、实验目的"><a href="#一、实验目的" class="headerlink" title="一、实验目的"></a>一、实验目的</h1><p>验证Linux环境安全和管理相关的操作，理解Linux系统安全性配置和管理原则，掌握实现安全配置和管理的基本方法。</p>
+<h1 id="二、实验任务"><a href="#二、实验任务" class="headerlink" title="二、实验任务"></a>二、实验任务</h1><h2 id="1）任务一："><a href="#1）任务一：" class="headerlink" title="1）任务一："></a>1）任务一：</h2><p><strong>(a)  创建访问服务器端功能的公用账号linuxer，并设置登录Shell为“/opt/linuxer/bin/server.bash”，确认该任务正确完成；</strong><br>之前的实验已经做过了，这次快速的安装</p>
+<p>切换目录：cd /root/workspace</p>
+<p>cp resolv.conf /etc</p>
+<p>更新：apt-get update</p>
+<p>安装依赖包：apt install wput</p>
+<p>创建linuxer账号:<br><img src="https://img-blog.csdnimg.cn/2020111114501164.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>用cat命令查看shell:</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125160919777.png#pic_center" alt="在这里插入图片描述"></p>
+<p>更改shell，设置登录Shell为“/opt/linuxer/bin/server.bash”：<br><img src="https://img-blog.csdnimg.cn/20201125160928695.png#pic_center" alt="在这里插入图片描述"></p>
+<p>更改后用cat命令：cat /etc/passwd 发现shell已经改变了：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125160935893.png#pic_center" alt="在这里插入图片描述"></p>
+<p>测试是否安装好：<br><img src="https://img-blog.csdnimg.cn/20201125160943818.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>可以看到已经安装好了</p>
+<p><strong>(b) 启动linuxer客户端，访问“连接服务器”选项，使用linuxer账户和口令</strong></p>
+<p>选择选项三，连接服务器：<br><img src="https://img-blog.csdnimg.cn/20201125161033824.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>进入到linuxer账户界面：<br><img src="https://img-blog.csdnimg.cn/20201125161041913.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="2）任务二"><a href="#2）任务二" class="headerlink" title="2）任务二"></a>2）任务二</h2><p><strong>(a)  配置公用账号linuxer可以创建账号</strong></p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161127717.png#pic_center" alt="在这里插入图片描述"><br>这时再把客户端打开，连接服务器，创建账号（5120143773)：</p>
+<p><strong>(b) 使用服务器端“注册新用户”功能新建用户账号，并写出新创建账号的用户主目录以及登录Shell。</strong></p>
+<p>   这里我第一次做的时候没有注意到要创建格式为512014XXXX的账号，直接创建我的学号5120183773，创建账号不成功，后来改成5120143773才成功创建账户<br><img src="https://img-blog.csdnimg.cn/20201125161223186.png#pic_center" alt="在这里插入图片描述"></p>
+<p>创建成功<br><img src="https://img-blog.csdnimg.cn/20201125161235201.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>可以看到学生功能：修改口令，查看成绩</p>
+<p>写出登陆shell,还是用cat /etc.passwd，这一步忘记截图了</p>
+<h2 id="3）任务三"><a href="#3）任务三" class="headerlink" title="3）任务三"></a>3）任务三</h2><p>本任务将配置服务器端“查看成绩”的功能，操作流程为：启动客户端 -&gt; 访问“连接服务器”，使用linuxer账户和口令 -&gt; 访问“功能”，输入学号和口令 -&gt; 访问“查看成绩”，输入实验课编号lab1。</p>
+<ol>
+<li><p>修改/opt/linuxer/score目录（保存了学生成绩文件）的权限，使得：</p>
 <ul>
-<li><input disabled="" type="checkbox"> 在“/root”目录下建立5120183773.txt:</li>
+<li><p>  每个学生账户对该目录不可创建文件、不可建目录，只可浏览文件；</p>
+</li>
+<li><p>测试权限设置是否正确。 </p>
+</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/20201110153313286.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+</li>
+</ol>
+<p>查询成绩时，发现不能显示成绩，切换到score目录查看文件，是有各个实验的成绩记录的，用cat命令获取lab1的信息时发现没有我之前创建的5120143773账号，自然也check不到成绩</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161555305.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>再注册一个512014000的账号试试：<br><img src="https://img-blog.csdnimg.cn/20201125161615693.png#pic_center" alt="在这里插入图片描述"></p>
+<p>可以看到现在是有成绩的：<br><img src="https://img-blog.csdnimg.cn/2020112516162587.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p> 至于为啥？应该是权限问题<br><img src="https://img-blog.csdnimg.cn/20201125161633652.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>打开group文件，看到拥有root权限的用户是没有的<br>所以权限设置是对的，学生账户对该目录不可创建文件、不可建目录，只可浏览文件</p>
+<h2 id="4）任务四"><a href="#4）任务四" class="headerlink" title="4）任务四"></a>4）任务四</h2><p>本任务将为linuxer软件配置日志功能，要求能记录设施为user的info级别的日志记录，日志文件位置为/opt/linuxer/log/linuxer.log，日志消息为“Hello, Linuxer”，并通过logger软件测试日志功能设置成功。</p>
+<p>注意：</p>
+<p>1）日志文件应该设置为对syslog用户（日志系统的默认授权用户）可读可写；</p>
+<p>2）配置文件修改后，应该重新启动rsyslog进程</p>
+<p>首先安装rsyslog:</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161725389.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>启动后用ps命令看rsylog的：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161756373.png#pic_center" alt="在这里插入图片描述"></p>
+<p>重启一下服务：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161806191.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/2020112516181380.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>logger生成一个日志记录来测试：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161821336.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201125161828312.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201125161833610.png#pic_center" alt="在这里插入图片描述"></p>
+<p>运行rsyslod的用户是syslog，没有root权限</p>
+<p>生成配置文件后，更改属性（所有者改为syslog）：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161841595.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>现在linuxer.log的所有者syslog就可以对其进行读写操作（rw）</p>
+<p>更改其他用户的属性：chmod o=re linuxer.log</p>
+<p>改完之后再进行测试，文件可写了：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161851861.png#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201125161857358.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="5）任务五"><a href="#5）任务五" class="headerlink" title="5）任务五"></a>5）任务五</h2><p>根据5.4的描述，试将linuxer成绩目录/opt/linuxer/score/中的文件生成备份压缩包linuxer-score_&lt;时间&gt;.tar.gz。备份周期为每5分钟备份一次，并试试从该备份包恢复目录。</p>
+<p><img src="https://img-blog.csdnimg.cn/2020112516193318.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161939662.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201125161945863.png#pic_center" alt="在这里插入图片描述"></p>
+<h2 id="6）任务六"><a href="#6）任务六" class="headerlink" title="6）任务六"></a>6）任务六</h2><ol>
+<li><p>检查增加用户帐号操作后/etc/passwd文件的完整性变化，具体步骤包括：</p>
 <ul>
-<li><input disabled="" type="checkbox"> 在上述目录中，录入文字内容:</li>
+<li>确认/etc/passwd文件在tripwire的检查列表中</li>
+<li>生成基线数据库</li>
+<li>增加用户帐号操作</li>
+<li>检查文件完整性</li>
+<li>更新基线数据库</li>
+<li>检查文件完整性</li>
 </ul>
-<p><img src="https://img-blog.csdnimg.cn/20201110153403277.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> i:进入编辑模式 esc:进入命令模式 ：wq保存并退出</p>
-<p>2、展示如下命令的执行结果，并对结果进行适当说明</p>
-<p>（1）cat /root/workspace/sources.list</p>
-<p><img src="https://img-blog.csdnimg.cn/20201110153535914.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br> 最开始的命令sources少打了一个r所以显示没有那个文件或目录</p>
-<p>（2）more /root/workspace/sources.list</p>
-<p><img src="https://img-blog.csdnimg.cn/20201110155817370.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>   用 more显示sources.list的更多文件内容，已显示98%的内容，按q可以退出</p>
-<p>（3）cat /root/workspace/sources.list | less</p>
-<p><img src="https://img-blog.csdnimg.cn/20201110160038835.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>用cat读取，管道符连接，以管道的方式交给less命令。</p>
-<p>less与more类似，但使用less可以随意浏览文件，而more仅能向前移动，不能向后移动，而且less在查看之前不会加载整个文件。</p>
-<p>（4）cat /root/workspace/sources.list | grep “deb-src”<br><img src="https://img-blog.csdnimg.cn/2020111016024484.png#pic_center" alt="在这里插入图片描述"><br>用cat命令来显示sources.list的内容，用grep查找有关“deb-src”的内容，或者查找有相同连续一段字符的内容。</p>
-<p>输入命令时deb-src带了引号没有任何输出，也不报错，尝试不带引号也可以得到正确查找结果。</p>
-<p>（5）ln /root/workspace/sources.list tmp.list</p>
-<p><img src="https://img-blog.csdnimg.cn/20201110160458230.jpg#pic_center" alt="在这里插入图片描述"></p>
-<p>  用In方式将root文件下workspace下的sources.list链接到tmp.list</p>
-<p> （6） echo “add new line” &gt;&gt; tmp.list<br><img src="https://img-blog.csdnimg.cn/20201110160559798.jpg#pic_center" alt="在这里插入图片描述"><br>        在tmp.list文件下追加内容”add new line”</p>
-<p>（7）diff tmp.list /root/workspace/sources.list<br><img src="https://img-blog.csdnimg.cn/2020111016071334.png#pic_center" alt="在这里插入图片描述"><br>diff命令逐行比较tmp.list和sources.list,列出它们的不同之处，并告诉用户为了使两个文件一致，需要修改哪些行。若两个文件完全一样，则不显示输出。说明tmp.list和sources.list文件完全一样，因为是硬链接的同一个文件。</p>
-<p> （8）touch /root/workspace/qq.txt<br> 用touch命令在workspace下创建一个qq.txt的文件<br> <img src="https://img-blog.csdnimg.cn/20201110160804179.png#pic_center" alt="在这里插入图片描述"></p>
-<p>（9） tar -cvzf list.tar.gz *.list<br>将当前目录下所有的.list文件全部打包并压缩到list.tar.gz<br><img src="https://img-blog.csdnimg.cn/20201110160904366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>（10） whereis fping<br>查询fping在哪里，这里的输出表示没有安装fping,不然会显示相关的文件地址。尝试用find指令查找，可以找到。<br><img src="https://img-blog.csdnimg.cn/20201110161011847.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>3、在命令行窗口安装linuxer-client.deb（linuxer(课程实验系统)客户端安装包），回答如下问题：</p>
-<p>1)该软件需要安装其他哪些软件？如何安装？<br><img src="https://img-blog.csdnimg.cn/20201110163003763.png#pic_center" alt="在这里插入图片描述"><br>先更改系统配置，然后apt update，更新完成后用dpkg命令安装linuxer-client.deb，安装过程中显示必须依赖于wput，然而没有安装wput，所以要先安wput。<br><img src="https://img-blog.csdnimg.cn/2020111016302671.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201110163041444.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>首先用命令apt install wput安装wput<br><img src="https://img-blog.csdnimg.cn/20201110163108574.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>安装成功后再次安装client.deb,用上箭可以回到之前的命令。<br><img src="https://img-blog.csdnimg.cn/2020111016313064.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>可以看到已经安装完成。</p>
-<p>2)如何验证安装成功与否？</p>
-<p>  dpkg -| linuxer-client命令可以列出已安装包的信息。<br>  <img src="https://img-blog.csdnimg.cn/20201110163210646.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p>3)linuxer-client安装到系统中的文件有哪些？如何查询？<br>  dpkg -L linuxer-client可以显示安装到系统中的文件信息。<br>  <img src="https://img-blog.csdnimg.cn/20201110163242529.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20201110163254775.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
-<h1 id="二、实验思考"><a href="#二、实验思考" class="headerlink" title="二、实验思考"></a>二、实验思考</h1><p>1、怎样使用Linux提供的帮助系统来学习Linux 命令的使用？（以find命令的使用为例子）</p>
-<pre><code>  用info、man、--help可以查询每个命令自带的帮助。如info find、man find、find --help。</code></pre>
-<p> <img src="https://img-blog.csdnimg.cn/20201110163323383.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>2、如何完成.tar.gz包的卸载？能使用包管理器查询已安装过的.tar.gz包吗？（以前述fping_4.0.orig.tar.gz包为例子）<br>       手工编译安装一般在原来的安装文件里会有卸载脚本如uninstall，执行make uninstall &amp; make clean即可卸载软件。<br>        .tar.gz是一种文件压缩包的格式，可以通过命令 tar tf xxx.tar.gz来查看压缩内的文件清单<br>         安装tar.gz:<br>解压文件–转到安装路径–转到./configure–make编译–make install安装</p>
-<p>解压，cd切换到安装目录：<br>      <img src="https://img-blog.csdnimg.cn/20201110163456168.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>编译成可执行文件，./configure绝对路径转到安装目录<br><img src="https://img-blog.csdnimg.cn/20201110163518431.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>用make install命令安装：<br><img src="https://img-blog.csdnimg.cn/20201110163540812.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>安装好后用make uninstall卸载：<br><img src="https://img-blog.csdnimg.cn/20201110163603673.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>  卸载完成后用命令查看是否成功卸载<br>  <img src="https://img-blog.csdnimg.cn/20201110163633379.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br>    成功卸载。</p>
-<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>   通过本次实验，再次感受到了linux和windows的差别，也熟悉了目录基本操作命令：建立目录（mkdir）、删除目录（rmdir）、改变工作目录(cd)、显示当前目录(pwd),更在实际操作中加深了文件操作的基本命令的印象，cat可以显示文件内容或者合并文件，more还可以分屏显示文件等等，也了解到less和more的区别，使用less可以随意浏览文件，而more仅能向前移动，不能向后移动，而且less在查看之前不会加载整个文件。此外，在实际实验中对in、echo、diff、touch、grep、dpkg命令也有了了解。dpkg -i xxx用于下载，dpkg -l xxx用于验证，dpkg -L xxx用于查看安装文件信息。</p>
-<p>   同时在实验中遇到了一些问题，一是对命令不熟悉，往往要百度才能正确使用命令。二是在执行命令whereis fping时，输出的是fping:，后面没有任何内容，没有意识到是没有安装fping,用find花了很长时间才找到并安装。三是安装client.deb依赖的wput，忘了上课讲的要先更新系统配置再安，浪费了不少时间。</p>
+</li>
+</ol>
+<p>首先使用apt-get install tripwire命令安装tripwire：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162121425.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"><br><img src="https://img-blog.csdnimg.cn/20201125162136869.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>使用cat /etc/tripwire/twpol.txt命令确认/etc/passwd文件在tripwire的检查列表中：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162145930.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>输入tripwire–init生成基线数据库：<br><img src="https://img-blog.csdnimg.cn/20201125162154661.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>使用useradd新建一个测试用户test：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162203338.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>使用 tripwire –check /etc/passwd命令进行完整性检查：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162221272.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p> 使用tripwire –update -r /var/lib/tripwire/report/主机名-日期-编号.twr命令进行基线数据库更新。主机名是master，日期：20201109，编号212803：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162231847.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162238768.png#pic_center" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162247432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<p>使用 tripwire –check /etc/passwd命令进行完整性检查：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125162257874.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDUyMjU0MA==,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述"></p>
+<h1 id="三、实验思考"><a href="#三、实验思考" class="headerlink" title="三、实验思考"></a>三、实验思考</h1><p>1、如何设置一个用户属于多个组？</p>
+<p>首先创建一个用户并为其赋予密码，再使用命令usermod -G 用户组1，用户组2，用户组3… 用户名</p>
+<p>到这里就创建了用户组到用户，再使用su命令：su -用户名 查看是否创建成功。</p>
+<p>切换用户输入id命令</p>
+<p>2、系统的日志文件有哪些，是什么内容？如何查看rsyslog日志？（举例说明）</p>
+<p>系统应用通常在/var/log目录下创建日志文件，系统日志文件主要是存放系统内置程序或系统内核之类的日志信息如*.log、btmp、syslog等。</p>
+<p>用ls /var/log查看有哪些日志文件：</p>
+<p><img src="https://img-blog.csdnimg.cn/20201125160410471.png#pic_center" alt="在这里插入图片描述"></p>
+<p>btmp是错误登陆的信息记录，wtmp是登陆信息的记录，kern.log包含内核产生的日志，auth.log包含系统授权信息。</p>
+<p>查看rsyslog日志:cat /var/log/messages |grep rsyslog</p>
+<p>3、文件系统完整性检查的基本步骤有哪些？文件系统完整性检查可以应用在什么场景下？</p>
+<p>第一个步骤“生成基线数据库”用于生成需要检查的文件的快照，这个步骤一般在系统安全完成后，确认没有发生入侵行为之前进行；第二个步骤“完整性检查”用于将需要检查的文件的快照与保存的快照进行对比，发现文件变化，生成报告；第三个步骤“查看报告”用于显示第二个步骤的检查报告；第四个步骤“更性基线数据库”用于调整存放的文件快照，以适应系统文件的正常变化，防止误报。<br>应用于判断系统是否入侵，因为绝大多数操作系统被入侵时文件系统会发生相应的变化。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这次实验比前两次相对更难，但是有了前两次的基础，在安装服务时就更轻松了，直接修改resolv.conf文件，更新源再进行后续安装，出错的可能就小了，还知道了r(读)w(写)x(执行)的含义，以及使用ls -l命令查看文件或目录的访问权限。本次实验中，我在目录权限设置出了问题，导致最开始无法写入文件。同时还了解了系统的部分日志文件，但是在最后一个实验任务关于tripwire的使用方面还是有很多不明白的，下来还要多查资料，掌握完整性检查的大体流程，学习一下tripwire完整性检查的原理。</p>
 
       
 
@@ -315,7 +383,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/10/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%B8%80%EF%BC%89(5%EF%BC%89/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2020/11/25/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%B8%89%EF%BC%89/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -329,15 +397,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/11/11/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
+    <a href="/2020/11/11/Linux%E5%AE%9E%E9%AA%8C%EF%BC%88%E4%BA%8C%EF%BC%89/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title"></div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 
